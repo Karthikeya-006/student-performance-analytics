@@ -22,6 +22,7 @@ function calculate() {
     })
     .then(response => response.json())
     .then(result => {
+        console.log("API RESPONSE:",result)
         document.getElementById("result").innerText =
             "Internal Marks (out of 30): " + result.internal_marks_out_of_30;
     })
