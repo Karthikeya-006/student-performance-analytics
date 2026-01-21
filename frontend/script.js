@@ -10,10 +10,10 @@ function calculate() {
   quiz1: Number(document.getElementById("quiz1").value),
   quiz2: Number(document.getElementById("quiz2").value),
 
-  attendance_percentage: Number(document.getElementById("attendance").value)
+  attendance: Number(document.getElementById("attendance").value)
 };
 
-    fetch("https://student-performance-api-hgij.onrender.com//calculate-internal", {
+    fetch("https://student-performance-api-hgij.onrender.com/calculate-internal", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
