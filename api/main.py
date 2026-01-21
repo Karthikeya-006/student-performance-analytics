@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from api.schemas import StudentMarks
-from api.service import calculate_internal
+from schemas import StudentMarks
+from service import calculate_internal
 
 app = FastAPI(title="Student Performance API")
 
