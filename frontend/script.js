@@ -10,7 +10,7 @@ function calculate() {
         attendance: Number(document.getElementById("attendance").value)
     };
 
-    fetch("http://127.0.0.1:8000/calculate-internal", {
+    fetch("https://student-performance-api-hgij.onrender.com//calculate-internal", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
