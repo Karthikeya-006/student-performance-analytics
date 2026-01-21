@@ -1,14 +1,17 @@
 function calculate() {
 
     const data = {
-        mid1: Number(document.getElementById("mid1").value),
-        mid2: Number(document.getElementById("mid2").value),
-        assign1: Number(document.getElementById("assign1").value),
-        assign2: Number(document.getElementById("assign2").value),
-        quiz1: Number(document.getElementById("quiz1").value),
-        quiz2: Number(document.getElementById("quiz2").value),
-        attendance: Number(document.getElementById("attendance").value)
-    };
+  mid1: Number(document.getElementById("mid1").value),
+  mid2: Number(document.getElementById("mid2").value),
+
+  assignment1: Number(document.getElementById("assign1").value),
+  assignment2: Number(document.getElementById("assign2").value),
+
+  quiz1: Number(document.getElementById("quiz1").value),
+  quiz2: Number(document.getElementById("quiz2").value),
+
+  attendance_percentage: Number(document.getElementById("attendance").value)
+};
 
     fetch("https://student-performance-api-hgij.onrender.com//calculate-internal", {
         method: "POST",
